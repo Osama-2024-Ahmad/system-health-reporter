@@ -1,0 +1,11 @@
+# .shellcheckrc - ShellCheck configuration for system-health-reporter
+# https://github.com/koalaman/shellcheck/blob/master/shellcheck.1.md#rc-files
+
+# Allow unused variables in demo/reporting scripts (common for placeholders)
+# disable=SC2034
+
+# Allow declaring+assigning in one line for simple readonly constants
+# disable=SC2155
+
+# Strict mode: only enable what we truly want to ignore
+# (Recommended: fix warnings in code instead of suppressing globally)
