@@ -1,6 +1,6 @@
 # 🖥️ System Health & Status Reporter
 
-[![ShellCheck](https://github.com/yourusername/system-health-reporter/actions/workflows/ci.yml/badge.svg)](https://github.com/yourusername/system-health-reporter/actions/workflows/ci.yml)
+[![ShellCheck](https://github.com/Osama-2024-Ahmad/system-health-reporter/actions/workflows/ci.yml/badge.svg)](https://github.com/Osama-2024-Ahmad/system-health-reporter/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Bash](https://img.shields.io/badge/Bash-4.0+-blue.svg)](https://www.gnu.org/software/bash/)
 
@@ -24,45 +24,32 @@ A production-ready Bash script that collects CPU, memory, disk, network, and pro
 ## 🚀 Quick Start
 
 ### Requirements
+
 - Bash 4.0+
 - Standard Linux utilities: `awk`, `df`, `free`, `ps`, `ip`, `nproc`, `numfmt`
+- Optional: `jq` for pretty-printing JSON output
 
-### Installation
+### Installation & Running
+
 ```bash
-# Clone or download the script
-git clone https://github.com/yourusername/system-health-reporter.git
+# Clone the repository
+git clone https://github.com/Osama-2024-Ahmad/system-health-reporter.git
 cd system-health-reporter
 
-# Make executable
+# Make the script executable
 chmod +x system_health_reporter.sh
 
-### Running
-> 💡 **How to run these yourself**:  
-> - Text output: `./system_health_reporter.sh`  
-> - JSON output: `./system_health_reporter.sh --format json | jq .`  
-> - Dry-run: `./system_health_reporter.sh --dry-run`  
-> - Check exit code: `./system_health_reporter.sh >/dev/null 2>&1; echo $?`
+# Generate a human-readable text report
+./system_health_reporter.sh
 
-## 📸 Demo Output
+# Generate a JSON report and format with jq
+./system_health_reporter.sh --format json | jq .
 
-### 1️⃣ Text Format Output
-![Text Output](docs/screenshots/text-output.png)
-*Figure 1: Human-readable system health report with CPU, memory, disk, network, and process metrics.*
+# Show configured thresholds without evaluation (dry-run)
+./system_health_reporter.sh --dry-run
 
----
+# Check the exit code (useful for cron/monitoring)
+./system_health_reporter.sh >/dev/null 2>&1
+echo $?  # 0=OK, 1=WARNING, 2=CRITICAL
 
-### 2️⃣ JSON Format Output (Example 1)
-![JSON Output 1](docs/screenshots/json-output1.png)
-*Figure 2: Machine-parseable JSON report - ideal for dashboards and automation.*
 
----
-
-### 3️⃣ JSON Format Output (Example 2)
-![JSON Output 2](docs/screenshots/json-output2.png)
-*Figure 3: Detailed JSON structure with nested objects for disk, network, and processes.*
-
----
-
-### 4️⃣ Manual Tests
-![Manual Tests](docs/screenshots/Manual Tests.png)
-*Figure 4: Verification of exit codes, threshold alerts, and dry-run mode.*
