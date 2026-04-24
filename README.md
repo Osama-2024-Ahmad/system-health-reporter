@@ -58,7 +58,7 @@ echo $?  # 0=OK, 1=WARNING, 2=CRITICAL
 
 ### 1️⃣ Text Format Output
 
-![Text Output](https://github.com/Osama-2024-Ahmad/system-health-reporter/blob/main/docs/screenshots/text-output.png)
+![Text Output](docs/screenshots/text-output.png)
 
 *Figure 1: Human-readable system health report with CPU, memory, disk, network, and process metrics.*
 
@@ -66,7 +66,7 @@ echo $?  # 0=OK, 1=WARNING, 2=CRITICAL
 
 ### 2️⃣ JSON Format Output (Example 1)
 
-![JSON Output 1](https://github.com/Osama-2024-Ahmad/system-health-reporter/blob/main/docs/screenshots/json-output1.png)
+![JSON Output 1](https://docs/screenshots/json-output1.png)
 
 *Figure 2: Machine-parseable JSON report - ideal for dashboards and automation.*
 
