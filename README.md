@@ -58,7 +58,7 @@ echo $?  # 0=OK, 1=WARNING, 2=CRITICAL
 
 ### 1️⃣ Text Format Output
 
-![Text Output](https://github.com/Osama-2024-Ahmad/system-health-reporter/blob/422eba606c198f2b009404c8d5716c7475fc255c/text-output.png)
+![Text Output](https://github.com/Osama-2024-Ahmad/system-health-reporter/blob/main/docs/screenshots/text-output.png)
 
 *Figure 1: Human-readable system health report with CPU, memory, disk, network, and process metrics.*
 
@@ -66,7 +66,7 @@ echo $?  # 0=OK, 1=WARNING, 2=CRITICAL
 
 ### 2️⃣ JSON Format Output (Example 1)
 
-![JSON Output 1](docs/screenshots/json-output1.png)
+![JSON Output 1](https://github.com/Osama-2024-Ahmad/system-health-reporter/blob/main/docs/screenshots/json-output1.png)
 
 *Figure 2: Machine-parseable JSON report - ideal for dashboards and automation.*
 
@@ -74,7 +74,7 @@ echo $?  # 0=OK, 1=WARNING, 2=CRITICAL
 
 ### 3️⃣ JSON Format Output (Example 2)
 
-![JSON Output 2](docs/screenshots/json-output2.png)
+![JSON Output 2](https://github.com/Osama-2024-Ahmad/system-health-reporter/blob/main/docs/screenshots/json-output2.png)
 
 *Figure 3: Detailed JSON structure with nested objects for disk, network, and processes.*
 
@@ -82,7 +82,7 @@ echo $?  # 0=OK, 1=WARNING, 2=CRITICAL
 
 ### 4️⃣ Manual Tests
 
-![Manual Tests](docs/screenshots/Manual Tests.png)
+![Manual Tests](https://github.com/Osama-2024-Ahmad/system-health-reporter/blob/main/docs/screenshots/Manual%20Tests.png)
 
 *Figure 4: Verification of exit codes, threshold alerts, and dry-run mode.*
 
