@@ -52,4 +52,40 @@ chmod +x system_health_reporter.sh
 ./system_health_reporter.sh >/dev/null 2>&1
 echo $?  # 0=OK, 1=WARNING, 2=CRITICAL
 
+---
 
+## 📸 Output
+
+### 1️⃣ Text Format Output
+
+![Text Output](docs/screenshots/text-output.png)
+
+*Figure 1: Human-readable system health report with CPU, memory, disk, network, and process metrics.*
+
+---
+
+### 2️⃣ JSON Format Output (Example 1)
+
+![JSON Output 1](docs/screenshots/json-output1.png)
+
+*Figure 2: Machine-parseable JSON report - ideal for dashboards and automation.*
+
+---
+
+### 3️⃣ JSON Format Output (Example 2)
+
+![JSON Output 2](docs/screenshots/json-output2.png)
+
+*Figure 3: Detailed JSON structure with nested objects for disk, network, and processes.*
+
+---
+
+### 4️⃣ Manual Tests
+
+![Manual Tests](docs/screenshots/Manual Tests.png)
+
+*Figure 4: Verification of exit codes, threshold alerts, and dry-run mode.*
+
+> 💡 **Tip**: If images don't load, ensure the `docs/screenshots/` folder is committed to your repository.
+
+---
