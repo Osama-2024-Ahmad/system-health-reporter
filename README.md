@@ -58,7 +58,7 @@ echo $?  # 0=OK, 1=WARNING, 2=CRITICAL
 
 ### 1️⃣ Text Format Output
 
-![Text Output](docs/screenshots/text-output.png)
+![Text Output](https://github.com/Osama-2024-Ahmad/system-health-reporter/blob/e535511bc79c44ac86ca93b0c565e7aa2eeea96d/docs/screenshots/text-output.png)
 
 *Figure 1: Human-readable system health report with CPU, memory, disk, network, and process metrics.*
 
